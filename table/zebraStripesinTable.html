@@ -1,0 +1,73 @@
+<!-- Zebra Stripes if you add a background color on every other table row 
+ you will get a nice zebra stripes effect -->
+<!-- to style every other table row elment ,use the :nth-child(even) selector like this -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZebraStripes</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            /* border-collapse: collapse;:
+This property controls the way the borders of the table and its cells are displayed.
+collapse: When set to collapse, the borders between table cells are merged into a single border. This creates a seamless appearance, making the table look more cohesive and eliminating the double border effect that occurs when borders are separated12.
+width: 100%;:
+This property sets the width of the table to 100% of its containing element. For example, if the table is inside a <div> that is 500px wide, the table will also be 500px wide, taking up the full width of its container. */
+        }
+
+        th,td {
+            text-align: left;
+            padding: 8px;
+        }
+        /* zebra stipes concept applies for rows only */
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+        tr:nth-child(odd){
+            background-color: violet;
+        }
+        th:nth-child(odd){
+            background-color: burlywood;
+        }
+        /* zebra stipes for columns */
+        /* to apply zebra stripes concept over the columns set the:nth-child(even) for the data element */
+        td:nth-child(odd){
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+            
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+            
+        </tr>
+    
+    </table>
+
+</body>
+
+</html>

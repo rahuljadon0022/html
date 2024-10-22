@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligning Div Element side by side</title>
+    <style>
+    div.mycontainer{
+        width:100%;
+        overflow:auto;
+    }
+    div.mycontainer div{
+        width: 33%;
+        float: left;
+    }
+</style>
+</head>
+<body>
+    <!-- when we building webpages ,we often want to have two or more div element side by side.-->
+    <div class="mycontainer">
+        <!-- here the div class is parent class of type myconatiner  -->
+        <div style="background-color: aqua;">
+            <h2>London</h2>
+            <p>London is the capital city of bangladesh</p>
+            <p>London has over 13 million inhabitants</p>
+        </div>
+        <div style="background-color: brown;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway</p>
+            <p>oslo has over 600.000 inhabitants</p>
+
+        </div>
+        <div style="background-color: blueviolet;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of italy</p>
+            <p>Rome has almost 3 million inhabitanats</p> 
+
+        </div>
+    </div>
+</body>
+</html>    

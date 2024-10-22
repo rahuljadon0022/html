@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Selector in css
+        element or tag 
+        universal
+        class
+        id
+        group
+        attribute
+        descendent
+        direct child
+        immediate siblings
+        general siblings
+        pseudo selector(pseudo class and pseudo element) */
+        /* element selector or tag selector*/
+        /* in case of element selector jitne bhi div honge sab par bg color red ho jayega  */
+        div{
+           /* background-color: red;*/
+        }
+        /* class selector */
+        /* class selector main vo hi div red honge jinki class red hogi  */
+        .red{
+            background-color: red;
+        }
+        /* id selector */
+        /* jinki id green hogi unka background color green ho jayega  */
+        #green{
+            background-color: green;
+        }
+        /* child selector  */
+        /* in case of child selector agar kisi div ke andar agar koi paragraph  ya heading hain to us paragraph ka bg aor color vo ho jayega jo tum set karoge */
+        div > h1{
+            /* /hum yaha par h1 ya p bhi use kar sakte hain vo change kar dega  */
+            color: blue;
+            background-color: brown;
+        }
+        #rcorners2 {
+        border-radius: 25px;
+        border: 2px solid #73AD21;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+      }
+    </style>
+</head>
+<body>
+    <div>
+        i am div 
+    </div>
+    <div class="red">
+        i am div
+    </div>
+    <div id="green">
+        hello this is id selector
+        <!-- if we use article tag before p then the child selector will not be used  -->
+        <p>this is para inside the div so the child selector will work on them</p>
+        <h1>this is the heading inside the div</h1>
+    </div>
+   
+    
+</body>
+</html>

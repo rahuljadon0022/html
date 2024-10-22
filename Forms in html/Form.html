@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- an html form is used to collect user input .the user input is most often sent to a server for processing -->
+     <!-- the form element is a container for different types of input elements such as text fields,checkboxes,radio buttons,submit buttons -->
+    <form>
+        <label for="email">Enter email id:</label>
+        <!--it defines label for many form elements
+        the label element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) because
+        when the user clicks the text within the label element ,it toggels the radio button/checkbox.
+        the for attribute of the label tag should be equal to the id attribute of the input element to bind them together
+        -->
+        <br>
+        <input type="text" id="email" placeholder="enter a email id" >
+        <!-- the input element can be dispalyed in many ways depending on the type attribute
+         type can be text, checkbox,radio,submit(display a submit button),button(dispay a clickable button) 
+         the form itself is not visisble the default width of an input field is 20 characters 
+         if you provide type as date then the whole calender will get printed so we can provide different kinds of  types in input tag
+         input tag is a self closing tag -->
+        <br>
+        <br>
+        <label for="password">Enter password: </label>
+        <br>
+        <input type="text" id="password"  placeholder="enter the password">
+        <br>
+        <br>
+<input type="submit" value="click" style="background-color: red;">
+        <button>Click here:</button>
+        
+    </form>
+</body>
+</html>

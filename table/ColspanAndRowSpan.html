@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML table with rowspan and colspan</title>
+    <style>
+        table th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!-- to make a cell span over multiple columns use the colspan attribute  -->
+    <!-- Cell that span two columns .to make a cell span more than two columns ,use the colspan attribute -->
+     <table style="width:100%">
+        <tr>
+            <!-- the value of colspan attribute represents the  number of columns to span -->
+             <!-- the colspan is defined as the th element -->
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>THAKUR</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>VIKASH</td>
+            <td>YADAV</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>CHIRAG</td>
+            <td>AGARWAL</td>
+            <td>20</td>
+        </tr>
+        <!-- row Span->cells that span two rows .to make a cell span more than one row , use the rowspan attribute -->
+         <!-- the value of the rawspan attribute represents the number of rows to span -->
+          <!-- applied with td and th tag -->
+         <table style="width: 100%;">
+            <tr>
+                <th>Name</th>
+                <td>Jilli</td>
+            </tr>
+            <tr>
+                <th rowspan="2">MObile NUmber</th>
+                <td>765432667345</td>
+            </tr>
+            <tr>
+
+                <td>878709839089</td>
+            </tr>
+         </table>
+     </table>
+
+</body>
+</html>

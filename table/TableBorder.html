@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Border Concept</title>
+    <!-- to add borders to the table use the css border property on table,th,td element -->
+     <style>
+        table,th,td{
+            border: 5px solid black;
+            /* to avoid double borders like in the below example so set the css 
+            border-collapse: collapse; property is used this will make the border collapse into a single border */
+            border-collapse: collapse;
+        }
+     </style>
+</head>
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <th>FIRSTNAME</th>
+            <th>LASTNAME</th>
+            <th>AGE</th>
+        </tr>
+        <tr>
+            <td>RAHUL</td>
+            <td>THAKUR</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>VIKASH</td>
+            <td>YADAV</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>CHIRAG</td>
+            <td>AGARWAL</td>
+            <td>20</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
